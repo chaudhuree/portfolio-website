@@ -1,5 +1,6 @@
 const typedWord = document.querySelector(".typed-word");
 const cursor = document.querySelector(".cursor");
+const navbar=document.querySelector(".navbar");
 
 const wordArray = ["Web Developer", "Web Designer", "Tech Enthusiast"];
 let wordArrayIndex = 0;
@@ -50,3 +51,11 @@ function erase() {
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(type, newWordDelay);
 });
+
+window.addEventListener("scroll",function(){
+  if(this.window.scrollY>56){
+    navbar.classList.add("navbar-scrolled");
+  }else if(this.window.scrollY<56){
+    navbar.classList.remove("navbar-scrolled");
+  }
+})
