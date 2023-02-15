@@ -1,6 +1,7 @@
 const typedWord = document.querySelector(".typed-word");
 const cursor = document.querySelector(".cursor");
 const navbar=document.querySelector(".navbar");
+const navbarNav=document.querySelector("#navbarNav");
 
 const wordArray = ["Web Developer", "Web Designer", "Tech Enthusiast"];
 let wordArrayIndex = 0;
@@ -49,12 +50,14 @@ function erase() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  navbarNav.classList.add("bg-gray");
   setTimeout(type, newWordDelay);
 });
 
 window.addEventListener("scroll",function(){
   if(this.window.scrollY>56){
     navbar.classList.add("navbar-scrolled");
+    // navbarNav.classList.remove("bg-gray");
   }else if(this.window.scrollY<56){
     navbar.classList.remove("navbar-scrolled");
   }

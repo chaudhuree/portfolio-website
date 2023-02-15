@@ -213,6 +213,20 @@ hr.style_two {
 .card {
   border: 0 !important;
 }
+
+/* navbar icon */
+.navbar-toggler {
+  padding: 0px 12px;
+  outline: none;
+  border: none;
+  margin-left: auto;
+  box-shadow: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 /* XL Device :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
 }
