@@ -226,6 +226,9 @@ hr.style_two {
   outline: none;
   box-shadow: none;
 }
+.pt-100 {
+  padding-top: 100px !important;
+}
 
 /* XL Device :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
@@ -237,6 +240,33 @@ hr.style_two {
 
 /* MD Device :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+  .intro-text h1:nth-child(1) {
+    font-size: 1.8rem;
+  }
+  .intro-text h1:nth-child(2) {
+    font-size: 1.5rem;
+  }
+  .about_left img {
+    width: 250px;
+    height: 250px;
+  }
+  #navbarNav {
+    background: #f8f9fa !important;
+    border-bottom: 2px solid #a9b513 !important;
+  }
+  .custom_nav > #navbarNav {
+    text-align: center;
+    background: #fff !important;
+  }
+  .about_sec {
+    padding-top: 100px !important;
+  }
+  .about_sec > .about_right-parent {
+    margin-top: -1rem !important;
+  }
+  button.navbar-toggler {
+    padding: 0 30px !important;
+  }
 }
 
 /* Extra small Device. */
@@ -251,8 +281,39 @@ hr.style_two {
     width: 250px;
     height: 250px;
   }
+  #navbarNav {
+    background: #f8f9fa !important;
+    border-bottom: 2px solid #a9b513 !important;
+  }
+  .custom_nav > #navbarNav {
+    text-align: center;
+    background: #fff !important;
+  }
+  .about_sec {
+    padding-top: 100px !important;
+  }
+  .about_sec > .about_right-parent {
+    margin-top: 1rem !important;
+  }
+  button.navbar-toggler {
+    padding: 0 30px !important;
+  }
 }
 
 /* SM Small Device :550px. */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  .about_sec > .about_right-parent {
+    margin-top: 1rem !important;
+  }
+  button.navbar-toggler {
+    padding: 0 30px !important;
+  }
+}
+#preloader {
+  background: #000 url(../assets/preloader.gif) no-repeat center center;
+  background-size: 15%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
 }

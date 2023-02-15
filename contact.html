@@ -12,8 +12,12 @@
     />
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/contact.css" />
-
+    <style>
+      body {
+        padding-top: 57px;
+        background: #fff;
+      }
+    </style>
     <!-- pro font awesome 6 -->
     <script defer src="./js/all.js"></script>
   </head>
@@ -26,7 +30,7 @@
           <nav
             class="navbar navbar-expand-lg navbar-light p-md-3 fixed-top p-md-3"
           >
-            <div class="container">
+            <div class="container-fluid custom_nav">
               <!-- <a class="navbar-brand" href="#">chaudhuree</a> -->
               <button
                 class="navbar-toggler"
@@ -55,9 +59,9 @@
                     >
                   </li>
 
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                     <a class="nav-link text-dark" href="blog.html">blog</a>
-                  </li>
+                  </li> -->
                   <li class="nav-item">
                     <a
                       class="nav-link text-dark disabled text-muted"
@@ -73,62 +77,124 @@
           </nav>
         </div>
       </div>
-    </div>
-    <!-- contact section -->
-    <div class="contact-from">
-      <div class="form-area">
-        <div class="animated fadeInDown">
-          <h2>Contact With Me</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam
-            sapiente.
-          </p>
-        </div>
-
-        <div class="contact">
-          <div class="map animated fadeInLeft">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462080.32433199394!2d88.79435063929905!3d25.203137048509944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc9494ad9a6ab5%3A0x5b7248ec7d93107e!2sPanchbibi%20Upazila!5e0!3m2!1sen!2sbd!4v1604180098657!5m2!1sen!2sbd"
-              width="600"
-              height="450"
-              frameborder="0"
-              style="border: 0"
-              allowfullscreen=""
-              aria-hidden="false"
-              tabindex="0"
-            ></iframe>
-          </div>
-
-          <form class="form animated fadeInUp">
-            <label>
-              <input type="email" class="email" id="email" required />
-              <div class="label email-text">E-mail</div>
-            </label>
-
-            <label>
-              <input type="text" class="subject" id="subject" required />
-              <div class="label subject-text">Subject</div>
-            </label>
-
-            <label>
-              <textarea
-                class="help-box"
-                id="helpBox"
-                cols="30"
-                rows="10"
-                required
-              ></textarea>
-              <div class="label help-text">How we can help?</div>
-            </label>
-
-            <div class="submit-area">
-              <input type="submit" id="submit" value="Submit" />
-              <i class="far fa-paper-plane submit_icon"></i>
+      <div class="row">
+        <div class="col">
+          <!-- contact section -->
+          <div class="container my-3 my-sm-5">
+            <h1 class="text-center fw-bolder mb-5 text-decoration-underline">
+              Contact
+            </h1>
+            <div class="row">
+              <div class="col-12 col-lg-6 mb-3">
+                <h2 class="text-center fw-bolder">Message Me:</h2>
+                <form>
+                  <div class="row">
+                    <div class="col-12 col-sm-6">
+                      <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            id="name"
+                            class="form-control"
+                            name="name"
+                            placeholder="Name"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <div class="input-group">
+                          <input
+                            type="email"
+                            id="email"
+                            class="form-control"
+                            name="email"
+                            placeholder="example@email.com"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-sm-6">
+                      <div class="mb-3">
+                        <label for="telephone" class="form-label"
+                          >Telephone</label
+                        >
+                        <div class="input-group">
+                          <input
+                            type="tel"
+                            id="telephone"
+                            class="form-control"
+                            name="telephone"
+                            placeholder="+8801"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="mb-3">
+                        <label for="department" class="form-label"
+                          >Purpose of Contact:</label
+                        >
+                        <div class="input-group">
+                          <select
+                            id="department"
+                            class="form-select"
+                            name="department"
+                            aria-describedby="department-help-block"
+                            required
+                          >
+                            <option value="">- select here -</option>
+                            <option value="business">Development</option>
+                            <option value="sale">Design</option>
+                            <option value="support">Personal</option>
+                          </select>
+                        </div>
+                        <small id="department-help-block" class="form-text"
+                          >Please select the subject of your message.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message:</label>
+                    <div class="input-group">
+                      <textarea
+                        id="message"
+                        class="form-control"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message here..."
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="reset" class="btn btn-secondary">Reset</button>
+                </form>
+              </div>
+              <div class="col-12 col-lg-6">
+                <h2 class="text-center fw-bolder">My Location:</h2>
+                <div class="ratio ratio-4x3">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462080.32433199394!2d88.79435063929905!3d25.203137048509944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc9494ad9a6ab5%3A0x5b7248ec7d93107e!2sPanchbibi%20Upazila!5e0!3m2!1sen!2sbd!4v1604180098657!5m2!1sen!2sbd"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
             </div>
-          </form>
+          </div>
+          <!-- contact section end -->
         </div>
       </div>
     </div>
+
     <!-- javascript -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>

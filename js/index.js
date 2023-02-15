@@ -50,7 +50,7 @@ function erase() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  navbarNav.classList.add("bg-gray");
+  // navbarNav.classList.add("bg-gray");
   setTimeout(type, newWordDelay);
 });
 

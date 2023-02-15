@@ -17,8 +17,10 @@
       <div class="row">
         <div class="col">
           <!-- Navbar  -->
-          <nav class="navbar navbar-expand-lg navbar-light p-md-3">
-            <div class="container">
+          <nav
+            class="navbar navbar-expand-lg navbar-light p-md-3 fixed-top bg-sm-dark"
+          >
+            <div class="container-fluid custom_nav">
               <!-- <a class="navbar-brand" href="#">chaudhuree</a> -->
               <button
                 class="navbar-toggler"
@@ -52,9 +54,9 @@
                       >portfolio</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                     <a class="nav-link text-dark" href="blog.html">blog</a>
-                  </li>
+                  </li> -->
                   <li class="nav-item">
                     <a class="nav-link text-dark" href="contact.html"
                       >contact me</a
@@ -68,14 +70,16 @@
       </div>
       <!-- about section -->
 
-      <div class="row p-5">
+      <div class="row p-5 mt-3 about_sec">
         <div class="col-12 col-md-6 d-flex justify-content-center">
-          <div class="about_left">
+          <div class="about_left py-lg-5">
             <img src="/assets/about.jpg" class="img-fluid" alt="chaudhuree" />
           </div>
         </div>
-        <div class="col-12 col-md-6 d-flex justify-content-center mt-3">
-          <div class="about_right">
+        <div
+          class="col-12 col-md-6 d-flex justify-content-center mt-sm-3 about_right-parent"
+        >
+          <div class="about_right py-lg-5">
             <h1>about me:</h1>
             <p class="lead">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad at
@@ -85,7 +89,7 @@
               explicabo porro nihil harum a dolor, officia aperiam maiores
               assumenda corrupti unde dicta dignissimos.
             </p>
-            <p>
+            <p class="d-none d-lg-block">
               &nbsp;&nbsp;&nbsp; Lorem ipsum dolor, sit amet consectetur
               adipisicing elit. Expedita deleniti, tenetur hic quibusdam amet
               sunt dolorem nemo delectus quam nihil.

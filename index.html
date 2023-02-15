@@ -12,13 +12,14 @@
     <script defer src="./js/all.js"></script>
   </head>
   <body>
-    <!-- Navbar  -->
+    <!-- preloader -->
+    <div id="preloader"></div>
 
     <!-- hero section -->
     <div class="container-fluid hero_body">
       <div class="dark-overlay">
         <div class="row">
-          <div class="text-end p-4">
+          <div class="text-end px-5 pt-4">
             <a
               href="about.html"
               class="text-decoration-none text-light fw-bold inline-block"
@@ -48,5 +49,14 @@
     <!-- javascript -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
+    <script>
+      // preloader
+      const preloader = document.querySelector("#preloader");
+      window.addEventListener("load", function () {
+        setTimeout(() => {
+          preloader.style.display = "none";
+        }, 2000);
+      });
+    </script>
   </body>
 </html>
