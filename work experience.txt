@@ -1,0 +1,129 @@
+<div class="card mb-4">
+            <h2 class="card-header text-center fw-bolder">Work Experience</h2>
+            <div class="card-body px-4">
+              <!-- card item starts -->
+              <div class="d-flex align-items-center mb-2 px-4">
+                <i class="fa-sharp fa-solid fa-code fa-fw fa-3x me-2 icon"></i>
+                <div class="flex-grow-1">
+                  <h3 class="h4 mb-1 fw-bold">Front-End Developer</h3>
+                  <div
+                    class="d-sm-flex justify-content-sm-between align-items-sm-baseline"
+                  >
+                    <h5 class="mb-0">
+                      <a
+                        href="#0"
+                        class="text-decoration-none text-dark fst-italic"
+                        >Lorem Ipsum</a
+                      >
+                    </h5>
+                    <small class="text-uppercase fw-bold text-muted"
+                      ><time datetime="2020-01">March 2021</time> &ndash;
+                      <time datetime="2020-12">December 2023</time></small
+                    >
+                  </div>
+                </div>
+              </div>
+              <p class="card-text px-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <hr class="style_two" />
+              <!-- card item finish -->
+              <div class="d-flex align-items-center mb-2 px-4">
+                <i
+                  class="fa-sharp fa-solid fa-bandage fa-fw fa-3x me-2 icon"
+                ></i>
+                <div class="flex-grow-1">
+                  <h3 class="h4 mb-1 fw-bold">UI/UX Developer</h3>
+                  <div
+                    class="d-sm-flex justify-content-sm-between align-items-sm-baseline"
+                  >
+                    <h5 class="mb-0">
+                      <a
+                        href="#0"
+                        class="text-decoration-none text-dark fst-italic"
+                        >Doller Limit</a
+                      >
+                    </h5>
+                    <small class="text-uppercase fw-bold text-muted"
+                      ><time datetime="2020-01">March 2021</time> &ndash;
+                      <time datetime="2020-12">December 2023</time></small
+                    >
+                  </div>
+                </div>
+              </div>
+              <p class="card-text px-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <hr class="style_two" />
+              <div class="d-flex align-items-center mb-2 px-4">
+                <i class="fa-sharp fa-solid fa-ring fa-fw fa-3x me-2 icon"></i>
+                <div class="flex-grow-1">
+                  <h3 class="h4 mb-1 fw-bold">Back-End Developer</h3>
+                  <div
+                    class="d-sm-flex justify-content-sm-between align-items-sm-baseline"
+                  >
+                    <h5 class="mb-0">
+                      <a
+                        href="#0"
+                        class="text-decoration-none text-dark fst-italic"
+                        >Consectetr adipiscing</a
+                      >
+                    </h5>
+                    <small class="text-uppercase fw-bold text-muted"
+                      ><time datetime="2020-01">March 2021</time> &ndash;
+                      <time datetime="2020-12">December 2023</time></small
+                    >
+                  </div>
+                </div>
+              </div>
+              <p class="card-text px-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <hr class="style_two" />
+              <div class="collapse" id="collapse-work">
+                <div class="d-flex align-items-center mb-2 px-4">
+                  <i
+                    class="fa-sharp fa-solid fa-copyright fa-fw fa-3x me-2 icon"
+                  ></i>
+                  <div class="flex-grow-1">
+                    <h3 class="h4 mb-1 fw-bold">Full-Stack Developer</h3>
+                    <div
+                      class="d-sm-flex justify-content-sm-between align-items-sm-baseline"
+                    >
+                      <h5 class="mb-0">
+                        <a
+                          href="#0"
+                          class="text-decoration-none text-dark fst-italic"
+                          >Brain Storm</a
+                        >
+                      </h5>
+                      <small class="text-uppercase fw-bold text-muted"
+                        ><time datetime="2020-01">March 2021</time> &ndash;
+                        <time datetime="2020-12">December 2023</time></small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <p class="card-text px-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <hr class="style_two" />
+              </div>
+              <div class="d-grid d-block">
+                <button
+                  type="button"
+                  class="btn btn-outline-success"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-work"
+                  aria-expanded="false"
+                  aria-controls="collapse-work"
+                >
+                  Show all
+                </button>
+              </div>
+            </div>
+          </div>

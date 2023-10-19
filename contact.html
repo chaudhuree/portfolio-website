@@ -87,7 +87,10 @@
             <div class="row">
               <div class="col-12 col-lg-6 mb-3">
                 <h2 class="text-center fw-bolder">Message Me:</h2>
-                <form>
+                <form
+                  action="https://formsubmit.co/chaudhuree@gmail.com"
+                  method="POST"
+                >
                   <div class="row">
                     <div class="col-12 col-sm-6">
                       <div class="mb-3">
@@ -175,6 +178,9 @@
                       ></textarea>
                     </div>
                   </div>
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="hidden" name="_template" value="table">
+                  <input type="hidden" name="_next" value="https://chaudhuree.netlify.app/thankyou.html">
                   <button type="submit" class="btn btn-primary">Submit</button>
                   <button type="reset" class="btn btn-secondary">Reset</button>
                 </form>
